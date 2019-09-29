@@ -9,3 +9,25 @@
 .bold {
   font-weight:bold;
 }
+
+.App button {
+  background-color:purple;
+      color :white;
+      font:inherit;
+      border:15px solid blue; 
+      padding: 8px;
+      cursor: pointer;
+} */
+
+.App button:hover{
+  background-color:purple;
+  color:black;
+}
+.App button.red {
+  background-color:pink;
+
+} 
+.App button.red:hover {
+  background-color:salmon;
+  color:black;
+}
