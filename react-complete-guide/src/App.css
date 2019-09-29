@@ -11,16 +11,16 @@
 }
 
 .App button {
-  background-color:purple;
+  background-color:green;
       color :white;
       font:inherit;
-      border:15px solid blue; 
+      border:5px solid blue; 
       padding: 8px;
       cursor: pointer;
-} */
+} 
 
 .App button:hover{
-  background-color:purple;
+  background-color:rgb(10, 224, 10);
   color:black;
 }
 .App button.red {
