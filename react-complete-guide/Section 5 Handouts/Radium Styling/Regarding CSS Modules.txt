@@ -5,6 +5,7 @@ In the next lecture, we'll use a styling solution named "CSS modules". I'll expl
 
 The way we unlock it changed a little bit though.
 
+In the past, you needed to "eject" from your project as created with create-react-app (CRA) so that you can edit the underlying Webpack config. That's what we do in the videos.
 
 ***
 
