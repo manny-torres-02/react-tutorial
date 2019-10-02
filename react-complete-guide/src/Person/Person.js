@@ -7,12 +7,12 @@ const person =(props) => {
      '@media (min-width:500px)':{ 
      width: "450px"
  }*/
-const rnd =Math.random();
+/*const rnd =Math.random();
 
 if (rnd>0.7) {
     throw new Error ('something went wrong')
 }
-
+*/
 return (
     <div className='Person' /*style={style}*/>
 <h1 onClick = {props.click}>Hi, Im {props.name} AND i AM {props.age} years old </h1>
