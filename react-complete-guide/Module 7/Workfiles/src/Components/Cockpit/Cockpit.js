@@ -7,12 +7,24 @@ const cockpit= (props) => {
     useEffect(() => {
       console.log('[cockpit.js] useEffect');
       //HTTP Request 
-      setTimeout(() => {
+        setTimeout(() => {
         alert('saved Data to Cloud!');
-      }, 1000);
-    }, []);
-
+      }, 1000) ;
     
+    return () => {
+    
+      console.log('[Cockpit.js] cleanUpWork in useEffect');
+    };
+    }, 
+    []);
+
+  useEffect(() => {
+    console.log('[cockpit.js] useEffect');
+    return () => {
+      console.log('[Cockpit.js] cleanUpWork in 2nd useEffect');
+    };
+  },
+  []);
 
     const assignedClasses = [];
     let btnClass = '';
@@ -41,4 +53,4 @@ const cockpit= (props) => {
     );
 };
 
-export default cockpit
+export default React.memo(cockpit);
