@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import classes from './App.css';
 
 import Persons from '../Components/Persons/Persons';
@@ -6,7 +6,7 @@ import Cockpit from '../Components/Cockpit/Cockpit';
 
 
 
-class App extends Component {
+class App extends PureComponent {
   constructor (props) {
     super (props);
     console.log('[App.js] constructor]')
@@ -24,7 +24,7 @@ class App extends Component {
 
   }
 
-  static getDerivedStateFromProps (props, state) {
+  /* static getDerivedStateFromProps (props, state) {
     console.log('[app.js] getDerivedStateFromProps', props);
     return state;
   }
@@ -37,9 +37,17 @@ componentDidMount () {
 }
 
 shouldComponenetUpdate (nextProps, nextState) {
-  console.log('[app.js] shouldComponentUpdate')
+  console.log('[app.js] shouldComponentUpdate'); 
+  if (
+    nextProps.persons !== this.props.persons ||
+    nextProps.changed !== this.props.changed ||
+    nextProps.clicked !== this.props.changed 
+  ) { 
   return true;
+} else {
+  return false;
 }
+} */
 
 componentDidUpdate() {
   console.log('[app.js} componentDidUpdate]');
